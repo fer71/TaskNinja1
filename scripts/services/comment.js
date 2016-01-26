@@ -17,7 +17,7 @@ app.factory('Comment', function(FURL, $firebase) {
 				return task_comments.$add(comment);
 			}
 		}
-	},
+	};
 
 	return Comment;
 });
