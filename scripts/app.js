@@ -2,19 +2,19 @@
 
 var app = angular
   .module('TaskNinjaApp', [
-    'ngAnimate',
+    'ngAnimate',    
     'ngResource',
-    'ngRoute',
+    'ngRoute',    
     'firebase',
     'toaster',
     'angularMoment'
   ])
-  .constant('FURL', 'https://taskninja11.firebaseio.com/')  
+  .constant('FURL', 'https://task-ninja.firebaseio.com/')  
   .config(function ($routeProvider) {
-    $routeProvider
+    $routeProvider      
       .when('/', {
         templateUrl: 'views/browse.html',
-        controller: 'BrowseController'
+        controller: 'BrowseController'     
       })
       .when('/browse/:taskId', {
         templateUrl: 'views/browse.html',
